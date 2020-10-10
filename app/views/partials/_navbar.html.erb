@@ -1,0 +1,30 @@
+<nav>
+    <ul class="nav-list">
+        <li class="nav-item">ALOTLogo <span class="nav-item-home">Home</span>
+        </li>
+        <li class="nav-item">
+            <i class="fa fa-search" id="navbar-search-icon" aria-hidden="true"></i>
+            <input type="text" id="navbar-input" style="text-indent:40px;" placeholder="Search">
+        </li>
+        <li class="nav-item">
+            <i class="far fa-question-circle navlist-icon"></i>
+            <a href="#">Help</a>
+        </li>
+        <li class="nav-item">
+            <i class="far fa-bell navlist-icon"></i>
+            <a href="#">Warning Center</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <%= image_tag 'someone.jpg', class: "navbar-user-img"  %>
+                Jhonson
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">Reports</a>
+                <a href="#" class="dropdown-item">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Logout</a>
+            </div>
+        </li>
+    </ul>
+</nav>
