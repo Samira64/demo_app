@@ -13,13 +13,11 @@
 </head>
 
 <body>
-  <div class="my-container">  
-    <%= render 'partials/navbar' %>
-
     <%= render 'partials/sidemenu' %>
-    <div class="main">
+    <main>
+    <%= render 'partials/navbar' %>
       <%= yield %>
-    </div>
+    </main>
   </div>
 
   
