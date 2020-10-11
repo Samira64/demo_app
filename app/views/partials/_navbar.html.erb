@@ -1,22 +1,73 @@
-<nav>
-    <ul class="nav-list">
-        <li class="nav-item">ALOTLogo <span class="nav-item-home">Home</span>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">ALOTLOGO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item mr-5">
+      <div class="input-group">
+            <span class="input-group-prepend">
+                <div class="input-group-text bg-transparent"><i class="fa fa-search text-muted"></i></div>
+            </span>
+            <input class="form-control py-2 border-left-0 border shadow-none" type="search" placeholder="search">
+        </div>
+      </li>
+      <li class="nav-item mr-5">
+        <a class="nav-link" href="#">
+            <i class="far fa-question-circle glyphicon glyphicon-user"></i>
+            Help
+        </a>
+      </li>
+      <li class="nav-item mr-5">
+        <a class="nav-link" href="#"><i class="far fa-bell"></i>
+            Warning Center</a>
+      </li>
+      <li class="nav-item dropdown mr-5">
+        <a class="nav-link dropdown-toggle" href="#" id="navDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= image_tag 'someone.jpg', class: "navbar-user-img"  %>
+          <span id="username">Jhonson</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navDropDown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AlotLOGO</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <i class="fa fa-search"  aria-hidden="true"></i>
+            <input type="text" style="text-indent:40px;" placeholder="Search">
         </li>
-        <li class="nav-item">
-            <i class="fa fa-search" id="navbar-search-icon" aria-hidden="true"></i>
-            <input type="text" id="navbar-input" style="text-indent:40px;" placeholder="Search">
+        <li>
+            <a href="#">
+            <i class="far fa-question-circle glyphicon glyphicon-user"></i>
+            Help</a>
         </li>
-        <li class="nav-item">
-            <i class="far fa-question-circle navlist-icon"></i>
-            <a href="#">Help</a>
+        <li>
+            <a href="#">
+            <i class="far fa-bell"></i>
+            Warning Center</a>
         </li>
-        <li class="nav-item">
-            <i class="far fa-bell navlist-icon"></i>
-            <a href="#">Warning Center</a>
-        </li>
-        <li class="nav-item dropdown">
+        <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <%= image_tag 'someone.jpg', class: "navbar-user-img"  %>
+                //<%= image_tag 'someone.jpg', class: "navbar-user-img"  %>
                 Jhonson
             </a>
             <div class="dropdown-menu dropdown-menu-right">
@@ -27,4 +78,5 @@
             </div>
         </li>
     </ul>
-</nav>
+  </div>
+</nav> -->
