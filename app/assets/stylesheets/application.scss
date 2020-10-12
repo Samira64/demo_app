@@ -9,8 +9,17 @@ body {
   font-size: 18px;
 }
 
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .navbar-collapse {
   justify-content: flex-end;
+}
+
+.search-btn-width {
+  width: 300px;
 }
 
 .navbar-user-img {
@@ -75,6 +84,75 @@ main {
   display: block;
 }
 
+.box-shadowed {
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 0.5rem;
+}
+
+.icon-three-dots {
+  background: url('data:image/svg+xml, <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+  </svg>');
+  background-repeat: no-repeat;
+}
+
+.card-title h5{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.card-title svg {
+  margin-top: 8px;
+}
+
+.metric-keys {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.metric-key-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metric-name {
+  font-size: 0.75rem;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 0.5rem;
+}
+
+.progress-metric-name h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.metric-linear-progress {
+  position: relative;
+}
+
+.metric-value {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
