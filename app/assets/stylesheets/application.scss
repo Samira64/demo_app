@@ -84,25 +84,16 @@ main {
   display: block;
 }
 
-.left-card, .right-card {
-  height: 400px;
+.box-shadowed {
   box-shadow: 0 0 20px #ccc;
   border-radius: 0.5rem;
 }
 
-.left-card .card-title {
-  padding: 0;
-}
-
-.metric-cards-heading {
-  margin-top: 50px;
-  padding: 0 0 15px 15px;
-  width: 100%;
-}
-
-.metric-cards-heading h5 {
-  font-weight: bold;
-  font-size: 2rem;
+.icon-three-dots {
+  background: url('data:image/svg+xml, <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+  </svg>');
+  background-repeat: no-repeat;
 }
 
 .card-title h5{
@@ -113,14 +104,14 @@ main {
 .card-title {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .card-title svg {
   margin-top: 8px;
 }
 
-.metric-key {
+.metric-keys {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -133,16 +124,15 @@ main {
   align-items: center;
 }
 
-.metric-name h5 {
+.metric-name {
   font-size: 0.75rem;
 }
 
-.metric-key-orange,
-.metric-key-blue,
-.metric-key-purple,
-.metric-key-red {
-  width: 50px;
-  height: 25px;
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .progress {
