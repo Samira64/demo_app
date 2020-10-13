@@ -212,6 +212,31 @@ main {
   border-radius: 1rem;
 }
 
+.alarms-table {
+  box-shadow: 0 0 20px #ccc;
+}
+.alarms-table th[scope="col"] {
+  color: rgb(174,176,247);
+}
+
+.alarms-table-button {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 2px solid rgb(174,176,247);
+  border-radius: 0.4rem;
+  color: rgb(174,176,247);
+  font-size: 1rem;
+}
+
+.alarms-table tr td:nth-child(6) {
+  color: rgba(255,0,0, 0.5);
+
+}
+
+.alarms-table tbody {
+  font-size: 15px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
