@@ -154,6 +154,12 @@ main {
   right: 0;
 }
 
+.background {
+  position: relative;
+  width: 360px;
+  height: 250px;
+}
+
 .region-bg-one {
   background-image: url("kaap.jpeg");
 }
@@ -186,17 +192,6 @@ main {
   color: #000000;
   line-height: 75px;
 }
-
-.background {
-  position: relative;
-  width: 360px;
-  height: 250px;
-}
-
-
-
-
-
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
