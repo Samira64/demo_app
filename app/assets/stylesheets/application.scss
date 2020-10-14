@@ -139,7 +139,7 @@ main {
   height: 0.5rem;
 }
 
-.progress-metric-name h5 {
+.metric-items h5 {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -152,6 +152,45 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.background {
+  position: relative;
+  width: 360px;
+  height: 250px;
+}
+
+.region-bg-one {
+  background-image: url("kaap.jpeg");
+}
+
+.region-bg-two {
+  background-image: url("lost.jpeg");
+}
+
+.region-bg-three {
+  background-image: url("villa.jpeg");
+}
+
+.region-bg-four {
+  background-image: url("arch.jpeg");
+}
+
+.region-name {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.region-name h2 {
+  font-weight: bold;
+  color: #000000;
+  line-height: 75px;
 }
 
 @media screen and (max-height: 450px) {
