@@ -154,78 +154,62 @@ main {
   right: 0;
 }
 
-.background {
+.region-box {
   position: relative;
-  width: 360px;
-  height: 250px;
 }
 
-.region-bg-one {
-  background-image: url("kaap.jpeg");
-}
-
-.region-bg-two {
-  background-image: url("lost.jpeg");
-}
-
-.region-bg-three {
-  background-image: url("villa.jpeg");
-}
-
-.region-bg-four {
-  background-image: url("arch.jpeg");
+.region-box img {
+  width: 100%;
 }
 
 .region-name {
-  width: 100%;
-  height: 30%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ffffff;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff8c;
   text-align: center;
-  opacity: 0.6;
+  font-size: 1.4rem;
 }
 
-.region-name h2 {
-  font-weight: bold;
-  color: #000000;
-  line-height: 75px;
-}
-
-.device {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 0 20px #ccc;
-    border-radius: 1rem;
-}
-
-.device .image-title {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform:  translateX(-50%);
-}
-
-.device img {
+.device-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  height: 200px;
+  box-shadow: 0 0 20px #ccc;
   border-radius: 1rem;
+}
+
+.device-item .device-name {
+  font-size: 1.4rem;
+}
+
+.device-item img {
+  width: 80%;
 }
 
 .alarms-table {
   box-shadow: 0 0 20px #ccc;
 }
-.alarms-table th[scope="col"] {
+
+.alarms-table  thead {
   color: rgb(174,176,247);
 }
 
-.alarms-table-button {
-  padding: 0.5rem 1rem;
-  background-color: #fff;
-  border: 2px solid rgb(174,176,247);
-  border-radius: 0.4rem;
+.btn-outline-purple {
+  border: 1px solid #696df2;
   color: rgb(174,176,247);
-  font-size: 1rem;
+}
+
+.btn-outline-purple:hover {
+  font-weight: bold;
+  border: 1px solid #696df2;
+  background: #696df2;
+  color: white;
 }
 
 .alarms-table tr td:nth-child(6) {
