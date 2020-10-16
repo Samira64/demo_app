@@ -225,6 +225,16 @@ main {
   font-size: 15px;
 }
 
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 3px solid #696df2;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
