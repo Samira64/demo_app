@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 .navbar {
@@ -205,6 +205,7 @@ main {
 }
 
 .btn-outline-purple {
+  background-color: white;
   border: 1px solid #696df2;
   color: rgb(174,176,247);
 }
@@ -222,7 +223,7 @@ main {
 }
 
 .alarms-table tbody {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .nav-tabs .nav-link {
@@ -263,7 +264,7 @@ main {
 }
 
 .system-box-title{
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .system-box-five {
@@ -272,25 +273,8 @@ main {
   right: 2%;
 }
 
-.status-on {
-  color: rgb(46, 170, 45);
-}
-
-.status-off {
-  color: red;
-}
-
-.position-relative {
-  position: relative;
-}
-
-.card-footer button {
-  position: absolute;
-  right: 2%;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff; 
-  width: 100px;
+.card-footer span {
+  font-size: 1rem;
 }
 
 @media screen and (max-height: 450px) {
