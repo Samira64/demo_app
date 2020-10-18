@@ -249,6 +249,29 @@ main {
   border-radius: 1rem;
 }
 
+.overview-img-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.overview-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.overview-card .card-title {
+  font-size: 0.75rem;
+}
+
+.consumption-amount {
+  font-size: 1.5rem;
+}
+
+.clip-circle {
+  clip-path: circle(45%);
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
