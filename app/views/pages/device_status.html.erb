@@ -1,13 +1,11 @@
-
-<ul class="nav nav-tabs mb-4">
-  <li class="nav-item mx-4">
-    <a class="nav-link active" href="#">Device Status</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Analaytics and Recommendations</a>
-  </li>
+<ul class="nav nav-tabs">
+	<li class="nav-item mx-4">
+		<a class="nav-link active" href="#">Device Status</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link disabled" href="#">Analaytics and Recommendations</a>
+	</li>
 </ul>
-
 <div class="row">
     <div class="col-12 my-4">
         <h4>Devices in Chaengwattana Branch, BLK 110</h4>
@@ -54,68 +52,74 @@
 <div class="row">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
-			<div class="card-body">
-				<div class="system-wrapper">
-					<div>
+			<div class="card-body position-relative">
+			<div class="icon-three-dots"></div>
+				<div class="row">
+					<div class="col">
 						<%= image_tag('regions/Image 1.png', alt: "Edit Entry") %>
 					</div>
-					<div>
-						<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">System Name</div>
-				    			<p class="font-weight-bold">AHU1</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Status</div>
-				    			<p class="font-weight-bold text-success">On</p>
-				    		</div>
-				    	</div>
-				    	<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Supply Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Return Temperature</div>
-				    			<p class="font-weight-bold">28 C</p>
-				    		</div>
-				    	</div>	
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+							<div class="">
+								<div class="text-muted">System Name</div>
+								<p class="font-weight-bold">AHU1</p>
+							</div>
+							<div class=" border-top pt-2">
+								<div class="text-muted">Supply Temperature</div>
+								<p class="font-weight-bold">27 C</p>
+							</div>
+						</div>						
 					</div>
-					<div>
-						<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Setpoint Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Mode</div>
-				    			<p class="font-weight-bold">Cool</p>
-				    		</div>
-				    	</div>
-				    	<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Ambient Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Ambient Humidity</div>
-				    			<p class="font-weight-bold">28%</p>
-				    		</div>
-				    	</div>	
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Status</div>
+							<p class="font-weight-bold text-success">On</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Return Temperature</div>
+							<p class="font-weight-bold">28 C</p>
+						</div>
 					</div>
-					<div class="system-box-four text-center">
-						<div class="system-box-four-title p-3">
-				    		<div class="system-box-title">Fan Speed</div>
-				    		<p class="font-weight-bold">2</p>
-				    	</div>
 					</div>
-					<div class="system-box-five icon-three-dots"></div>
-				</div>		
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Setpoint Temperature</div>
+							<p class="font-weight-bold">27 C</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Ambient Temperature</div>
+							<p class="font-weight-bold">27 C</p>
+					</div>
+						</div>
+						</div>
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Mode</div>
+							<p class="font-weight-bold">Cool</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Ambient Humidity</div>
+							<p class="font-weight-bold">28%</p>
+						</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Fan Speed</div>
+							<p class="font-weight-bold">2</p>
+						</div>
+					</div>
+					</div>
+				</div>
 			</div>
 			<div class="card-footer position-relative bg-purple">
 				<div class="row align-items-center">
 					<div class="col text-muted">
-						<span >Zone A</span>
+						<span>Zone A</span>
 						<span class="ml-5">ODU# 1</span>
 					</div>
 					<div class="col text-right">
@@ -127,71 +131,78 @@
 	</div>
 </div>
 
+
 <div class="row">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
-			<div class="card-body">
-				<div class="system-wrapper">
-					<div>
+			<div class="card-body position-relative">
+			<div class="icon-three-dots"></div>
+				<div class="row">
+					<div class="col">
 						<%= image_tag('regions/Image 1.png', alt: "Edit Entry") %>
 					</div>
-					<div>
-						<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">System Name</div>
-				    			<p class="font-weight-bold">AHU1</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Status</div>
-				    			<p class="font-weight-bold text-danger">Off</p>
-				    		</div>
-				    	</div>
-				    	<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Supply Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Return Temperature</div>
-				    			<p class="font-weight-bold">28 C</p>
-				    		</div>
-				    	</div>	
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+							<div class="">
+								<div class="text-muted">System Name</div>
+								<p class="font-weight-bold">AHU1</p>
+							</div>
+							<div class=" border-top pt-2">
+								<div class="text-muted">Supply Temperature</div>
+								<p class="font-weight-bold">27 C</p>
+							</div>
+						</div>						
 					</div>
-					<div>
-						<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Setpoint Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Mode</div>
-				    			<p class="font-weight-bold">Cool</p>
-				    		</div>
-				    	</div>
-				    	<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Ambient Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Ambient Humidity</div>
-				    			<p class="font-weight-bold">28%</p>
-				    		</div>
-				    	</div>	
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Status</div>
+							<p class="font-weight-bold text-success">On</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Return Temperature</div>
+							<p class="font-weight-bold">28 C</p>
+						</div>
 					</div>
-					<div>
-						<div class="system-box-four-title text-center p-3">
-				    		<div class="system-box-title">Fan Speed</div>
-				    		<p class="font-weight-bold">2</p>
-				    	</div>
 					</div>
-					<div class="system-box-five icon-three-dots"></div>
-				</div>	
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Setpoint Temperature</div>
+							<p class="font-weight-bold">27 C</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Ambient Temperature</div>
+							<p class="font-weight-bold">27 C</p>
+					</div>
+						</div>
+						</div>
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Mode</div>
+							<p class="font-weight-bold">Cool</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Ambient Humidity</div>
+							<p class="font-weight-bold">28%</p>
+						</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Fan Speed</div>
+							<p class="font-weight-bold">2</p>
+						</div>
+					</div>
+					</div>
+				</div>
 			</div>
 			<div class="card-footer position-relative bg-purple">
 				<div class="row align-items-center">
 					<div class="col text-muted">
-						<span >Zone A</span>
+						<span>Zone A</span>
 						<span class="ml-5">ODU# 1</span>
 					</div>
 					<div class="col text-right">
@@ -203,71 +214,78 @@
 	</div>
 </div>
 
+
 <div class="row">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
-			<div class="card-body">
-				<div class="system-wrapper">
-					<div>
+			<div class="card-body position-relative">
+			<div class="icon-three-dots"></div>
+				<div class="row">
+					<div class="col">
 						<%= image_tag('regions/Image 1.png', alt: "Edit Entry") %>
 					</div>
-					<div>
-						<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">System Name</div>
-				    			<p class="font-weight-bold">AHU1</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Status</div>
-				    			<p class="font-weight-bold text-success">On</p>
-				    		</div>
-				    	</div>
-				    	<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Supply Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Return Temperature</div>
-				    			<p class="font-weight-bold">28 C</p>
-				    		</div>
-				    	</div>	
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+							<div class="">
+								<div class="text-muted">System Name</div>
+								<p class="font-weight-bold">AHU1</p>
+							</div>
+							<div class=" border-top pt-2">
+								<div class="text-muted">Supply Temperature</div>
+								<p class="font-weight-bold">27 C</p>
+							</div>
+						</div>						
 					</div>
-					<div>
-						<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Setpoint Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Mode</div>
-				    			<p class="font-weight-bold">Cool</p>
-				    		</div>
-				    	</div>
-				    	<div class="system-box p-3">
-				    		<div class="text-center">
-				    			<div class="system-box-title">Ambient Temperature</div>
-				    			<p class="font-weight-bold">27 C</p>
-				    		</div>
-				    		<div class="text-center">
-				    			<div class="system-box-title">Ambient Humidity</div>
-				    			<p class="font-weight-bold">28%</p>
-				    		</div>
-				    	</div>	
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Status</div>
+							<p class="font-weight-bold text-danger">Off</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Return Temperature</div>
+							<p class="font-weight-bold">28 C</p>
+						</div>
 					</div>
-					<div class="system-box-four text-center">
-						<div class="system-box-four-title p-3">
-				    		<div class="system-box-title">Fan Speed</div>
-				    		<p class="font-weight-bold">2</p>
-				    	</div>
 					</div>
-					<div class="system-box-five icon-three-dots"></div>
-				</div>		
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Setpoint Temperature</div>
+							<p class="font-weight-bold">27 C</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Ambient Temperature</div>
+							<p class="font-weight-bold">27 C</p>
+					</div>
+						</div>
+						</div>
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Mode</div>
+							<p class="font-weight-bold">Cool</p>
+						</div>
+						<div class=" border-top pt-2">
+							<div class="text-muted">Ambient Humidity</div>
+							<p class="font-weight-bold">28%</p>
+						</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column h-100 justify-content-center">
+						<div class="">
+							<div class="text-muted">Fan Speed</div>
+							<p class="font-weight-bold">2</p>
+						</div>
+					</div>
+					</div>
+				</div>
 			</div>
 			<div class="card-footer position-relative bg-purple">
 				<div class="row align-items-center">
 					<div class="col text-muted">
-						<span >Zone A</span>
+						<span>Zone A</span>
 						<span class="ml-5">ODU# 1</span>
 					</div>
 					<div class="col text-right">
