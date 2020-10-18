@@ -240,6 +240,25 @@ main {
   background-color: rgb(226, 225, 253);
 }
 
+.levels-fontsize {
+  font-size: 1rem;
+}
+
+.navbar .navbar-nav .level-padding {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.text-purple {
+  color: rgb(174,176,247);
+}
+
+.level-on-hov:hover {
+  background-color: rgb(226, 225, 253);
+  color: rgb(105,109, 242);
+  border-radius: 1rem;
+}
+
 .system-wrapper {
   display: grid;
   grid-template-columns: 3fr 4fr 4fr 2fr 1fr;
