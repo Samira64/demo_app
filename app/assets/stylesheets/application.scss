@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
+  font-size: 16px;
 }
 
 .navbar {
@@ -98,10 +98,10 @@ main {
   height: 1em;
 }
 
-
-.card-title h5{
-  font-size: 1.5rem;
-  font-weight: bold;
+.card-body .icon-three-dots {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 
 .card-title {
@@ -219,7 +219,6 @@ main {
 
 .alarms-table tr td:nth-child(6) {
   color: rgba(255,0,0, 0.5);
-
 }
 
 .alarms-table tbody {
@@ -240,37 +239,14 @@ main {
   background-color: rgb(226, 225, 253);
 }
 
-.system-wrapper {
-  display: grid;
-  grid-template-columns: 3fr 4fr 4fr 2fr 1fr;
-  grid-gap: 1em;
-  grid-auto-rows: minmax(100px, auto);
+.text-purple {
+  color: rgb(174,176,247);
 }
 
-.system-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-.system-box:nth-child(1) {
-  border-bottom: 1px solid #ccc;
-}
-
-.system-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
-  justify-content: center;
-}
-
-.system-box-title{
-  font-size: 1rem;
-}
-
-.system-box-five {
-  position: absolute;
-  top: 10%;
-  right: 2%;
+.levels-nav .nav-item:hover {
+  background-color: rgb(226, 225, 253);
+  color: rgb(105,109, 242);
+  border-radius: 1rem;
 }
 
 @media screen and (max-height: 450px) {
