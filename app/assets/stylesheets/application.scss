@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 .navbar {
@@ -205,6 +205,7 @@ main {
 }
 
 .btn-outline-purple {
+  background-color: white;
   border: 1px solid #696df2;
   color: rgb(174,176,247);
 }
@@ -222,7 +223,54 @@ main {
 }
 
 .alarms-table tbody {
-  font-size: 15px;
+  font-size: 1rem;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 3px solid #696df2;
+}
+
+.bg-purple {
+  background-color: rgb(226, 225, 253);
+}
+
+.system-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 4fr 4fr 2fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.system-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.system-box:nth-child(1) {
+  border-bottom: 1px solid #ccc;
+}
+
+.system-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: center;
+}
+
+.system-box-title{
+  font-size: 1rem;
+}
+
+.system-box-five {
+  position: absolute;
+  top: 10%;
+  right: 2%;
 }
 
 @media screen and (max-height: 450px) {
