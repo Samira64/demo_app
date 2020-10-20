@@ -135,12 +135,18 @@ main {
 .circle {
   width: 10px;
   height: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .progress {
   height: 0.5rem;
+}
+
+.circle-progress span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .metric-items h5 {
