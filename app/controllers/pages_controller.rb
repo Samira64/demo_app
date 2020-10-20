@@ -5,4 +5,7 @@ class PagesController < ApplicationController
 	def device_status
 	end
 
+	def device_analytics
+	end
+
 end
