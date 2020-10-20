@@ -274,6 +274,15 @@ main {
   font-size:0.9rem;
 }
 
+.text-purple-link:hover {
+  color: rgb(105,109, 242);
+}
+
+.text-purple-link svg:hover {
+  fill: rgb(105,109, 242);
+}
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
