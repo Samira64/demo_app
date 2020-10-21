@@ -218,9 +218,19 @@ main {
 
 .btn-outline-purple:hover {
   font-weight: bold;
-  border: 1px solid #696df2;
   background: #696df2;
   color: white;
+}
+
+.btn-bg-purple {
+  background-color: rgb(105,109, 242);
+  color: #fff;
+}
+
+.btn-bg-purple:hover {
+  font-weight: bold;
+  background-color: white; 
+  color: rgb(174,176,247);
 }
 
 .alarms-table tr td:nth-child(6) {
@@ -272,6 +282,10 @@ main {
 
 .recommendation-card {
   font-size:0.9rem;
+}
+
+.border-light-gray {
+  border-color: #DCDCDC;
 }
 
 @media screen and (max-height: 450px) {
