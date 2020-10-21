@@ -222,9 +222,19 @@ main {
 
 .btn-outline-purple:hover {
   font-weight: bold;
-  border: 1px solid #696df2;
   background: #696df2;
   color: white;
+}
+
+.btn-bg-purple {
+  background-color: rgb(105,109, 242);
+  color: #fff;
+}
+
+.btn-bg-purple:hover {
+  font-weight: bold;
+  background-color: white; 
+  color: rgb(174,176,247);
 }
 
 .alarms-table tr td:nth-child(6) {
@@ -278,6 +288,7 @@ main {
   font-size:0.9rem;
 }
 
+
 .text-purple-link:hover {
   color: rgb(105,109, 242);
 }
@@ -286,6 +297,9 @@ main {
   fill: rgb(105,109, 242);
 }
 
+.border-light-gray {
+  border-color: #DCDCDC;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
