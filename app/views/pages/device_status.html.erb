@@ -1,40 +1,72 @@
 <ul class="nav nav-tabs">
 	<li class="nav-item">
-		<a class="nav-link active" href="#">Device Status</a>
+		<a class="nav-link active" href="/devices/345/status">Device Status</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link disabled" href="#">Analaytics and Recommendations</a>
+		<a class="nav-link disabled" href="/devices/:id/analytics">Analaytics and Recommendations</a>
 	</li>
 </ul>
 
+<script>
+function toggleMenu() {
+	$('.select-store-nav').toggleClass('open');
+	$('.toggle-button').toggleClass('slide');
+}
+</script>
+
 <div class="row">	
 	<div class="md-12">
-	<div class="map-container" style="height: 400px;">
-		<nav class="select-store-nav oen">
-			<ul>
-				<li><a href="#">RAMA2 Branch</a></li>
-				<li><a href="#">Nawamin Branch</a></li>
-				<li><a href="#">Chaiyapruk branch</a></li>
-				<li><a href="#">Chaenwattana Branch</a></li>
-			</ul>
+	<div class="map-container">
+		<nav class="select-store-nav">
+			<div class="d-flex flex-column">
+				<h3 class="list-group-item h3 mb-0">Select Store</h3>
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+				
+			</div>
 		</nav>
 	</div>
 	</div>
 </div>
 
-<script>
-function toggleMenu() {
-	$('.select-store-nav').toggleClass('open');
-}
-</script>
-	<button onClick="toggleMenu()">
-		<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			<path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.5 8.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+<div>
+	<p><button class="toggle-button border-0 slide-menu-btn" style="height:50px; width: 30px;" onClick="toggleMenu()">
+		<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+ 		<path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
 		</svg>
 	</button>
-
-<div>
-	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Dolores cum adipisci reprehenderit nulla illum quidem nesciunt molestiae consequuntur repellendus, quis perferendis maiores sapiente rem libero ex mollitia? Ad cum vero ab enim quae, velit quidem eos dicta nisi ipsa. Omnis, debitis voluptas iste quasi exercitationem aperiam, laboriosam officia asperiores error architecto dicta vero nesciunt voluptatibus perspiciatis ipsam fugit? Quo, quos enim minima iste, deserunt cum! Repudiandae, reprehenderit, quisquam? Voluptatem necessitatibus cumque soluta molestiae eius ad eaque magni vero velit harum itaque, possimus ipsam iusto atque, ipsa unde repudiandae veniam optio adipisci explicabo temporibus accusamus qui dolor natus! Asperiores, dolores, nobis.</p>
+	Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Dolores cum adipisci reprehenderit nulla illum quidem nesciunt molestiae consequuntur repellendus, quis perferendis maiores sapiente rem libero ex mollitia? Ad cum vero ab enim quae, velit quidem eos dicta nisi ipsa. Omnis, debitis voluptas iste quasi exercitationem aperiam, laboriosam officia asperiores error architecto dicta vero nesciunt voluptatibus perspiciatis ipsam fugit? Quo, quos enim minima iste, deserunt cum! Repudiandae, reprehenderit, quisquam? Voluptatem necessitatibus cumque soluta molestiae eius ad eaque magni vero velit harum itaque, possimus ipsam iusto atque, ipsa unde repudiandae veniam optio adipisci explicabo temporibus accusamus qui dolor natus! Asperiores, dolores, nobis.</p>
+	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Dolores cum adipisci reprehenderit nulla illum quidem nesciunt molestiae consequuntur repellendus, quis perferendis maiores sapiente rem libero ex mollitia? Ad cum vero ab enim quae, velit quidem eos dicta nisi ipsa. Omnis, debitis voluptas iste quasi exercitationem aperiam, laboriosam officia asperiores error architecto dicta vero nesciunt voluptatibus perspiciatis ipsam fugit? Quo, quos enim minima iste, deserunt cum! Repudiandae, reprehenderit, quisquam? Voluptatem necessitatibus cumque soluta molestiae eius ad eaque magni vero velit harum itaque, possimus ipsam iusto atque, ipsa unde repudiandae veniam optio adipisci explicabo temporibus accusamus qui dolor natus! Asperiores, dolores, nobis.
+	</p>
 	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Dolores cum adipisci reprehenderit nulla illum quidem nesciunt molestiae consequuntur repellendus, quis perferendis maiores sapiente rem libero ex mollitia? Ad cum vero ab enim quae, velit quidem eos dicta nisi ipsa. Omnis, debitis voluptas iste quasi exercitationem aperiam, laboriosam officia asperiores error architecto dicta vero nesciunt voluptatibus perspiciatis ipsam fugit? Quo, quos enim minima iste, deserunt cum! Repudiandae, reprehenderit, quisquam? Voluptatem necessitatibus cumque soluta molestiae eius ad eaque magni vero velit harum itaque, possimus ipsam iusto atque, ipsa unde repudiandae veniam optio adipisci explicabo temporibus accusamus qui dolor natus! Asperiores, dolores, nobis.
 	</p>
 </div>
@@ -89,11 +121,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">System Name</div>
 								<p class="font-weight-bold">AHU1</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Supply Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
@@ -101,11 +133,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Status</div>
 								<p class="font-weight-bold text-success">On</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Return Temperature</div>
 								<p class="font-weight-bold">28 C</p>
 							</div>
@@ -113,11 +145,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Setpoint Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Ambient Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
@@ -125,11 +157,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Mode</div>
 								<p class="font-weight-bold">Cool</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Ambient Humidity</div>
 								<p class="font-weight-bold">28%</p>
 							</div>
@@ -137,7 +169,7 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div>
 								<div class="text-muted">Fan Speed</div>
 								<p class="font-weight-bold">2</p>
 							</div>
@@ -160,7 +192,6 @@ function toggleMenu() {
 	</div>
 </div>
 
-
 <div class="row">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
@@ -172,11 +203,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">System Name</div>
 								<p class="font-weight-bold">AHU1</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Supply Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
@@ -184,11 +215,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Status</div>
 								<p class="font-weight-bold text-success">On</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Return Temperature</div>
 								<p class="font-weight-bold">28 C</p>
 							</div>
@@ -196,11 +227,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Setpoint Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Ambient Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
@@ -208,11 +239,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Mode</div>
 								<p class="font-weight-bold">Cool</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Ambient Humidity</div>
 								<p class="font-weight-bold">28%</p>
 							</div>
@@ -220,7 +251,7 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div>
 								<div class="text-muted">Fan Speed</div>
 								<p class="font-weight-bold">2</p>
 							</div>
@@ -243,7 +274,6 @@ function toggleMenu() {
 	</div>
 </div>
 
-
 <div class="row">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
@@ -255,11 +285,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">System Name</div>
 								<p class="font-weight-bold">AHU1</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Supply Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
@@ -267,11 +297,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Status</div>
 								<p class="font-weight-bold text-danger">Off</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Return Temperature</div>
 								<p class="font-weight-bold">28 C</p>
 							</div>
@@ -279,11 +309,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Setpoint Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Ambient Temperature</div>
 								<p class="font-weight-bold">27 C</p>
 							</div>
@@ -291,11 +321,11 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div class="h-100">
 								<div class="text-muted">Mode</div>
 								<p class="font-weight-bold">Cool</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Ambient Humidity</div>
 								<p class="font-weight-bold">28%</p>
 							</div>
@@ -303,7 +333,7 @@ function toggleMenu() {
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div>
 								<div class="text-muted">Fan Speed</div>
 								<p class="font-weight-bold">2</p>
 							</div>

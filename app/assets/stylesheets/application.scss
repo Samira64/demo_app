@@ -303,20 +303,35 @@ main {
 
 .select-store-nav {
   border: 1px solid #696df2;
-  background: lightblue; 
-  color: white;
   position: absolute;
   left: 0;
-  height: 350px;
-  width: 200px;
+  width: 250px;
   transform: translateX(-100%);
   transition: all 0.5s ease;
 }
 
-.select-store-nav.open {
+.open {
   transform: none;
 }
 
+.list-group-item img {
+  width: 60px;
+  height: 60px;
+}
+
+div.list-group-item:hover {
+  background-color: #aeb0f7;
+  color: #fff;
+}
+
+.slide {
+  transform: translateX(230px);
+  transition: all 0.5s ease;
+}
+
+.slide-menu-btn:focus {
+  outline: transparent;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
