@@ -54,6 +54,10 @@ main {
   margin-right: 10px;
 }
 
+.sidenav-logo p {
+  line-height: 0.7;
+}
+
 .sidenav-item {
   min-width: 140px;
   padding: 10px 0;
@@ -282,6 +286,15 @@ main {
 
 .recommendation-card {
   font-size:0.9rem;
+}
+
+
+.text-purple-link:hover {
+  color: rgb(105,109, 242);
+}
+
+.text-purple-link svg:hover {
+  fill: rgb(105,109, 242);
 }
 
 .border-light-gray {
