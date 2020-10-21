@@ -29,6 +29,7 @@ body {
 }
 
 main {
+  position: relative;
   margin-left: 300px;
   padding: 0 20px;
 }
@@ -288,7 +289,6 @@ main {
   font-size:0.9rem;
 }
 
-
 .text-purple-link:hover {
   color: rgb(105,109, 242);
 }
@@ -299,6 +299,23 @@ main {
 
 .border-light-gray {
   border-color: #DCDCDC;
+}
+
+.select-store-nav {
+  background-color: green;
+  border-right: 2px solid blue;
+  color: white;
+  position: absolute;
+  top: 95;
+  left: 0;
+  height: 350px;
+  width: 200px;
+  z-index: 0;
+  transform: translateX(-100%);
+}
+
+#toggle {
+  position: absolute;
 }
 
 @media screen and (max-height: 450px) {
