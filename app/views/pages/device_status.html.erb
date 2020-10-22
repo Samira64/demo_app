@@ -1,16 +1,75 @@
 <ul class="nav nav-tabs">
 	<li class="nav-item">
-		<a class="nav-link active" href="#">Device Status</a>
+		<a class="nav-link active" href="/devices/345/status">Device Status</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link disabled" href="#">Analaytics and Recommendations</a>
+		<a class="nav-link disabled" href="/devices/:id/analytics">Analaytics and Recommendations</a>
 	</li>
 </ul>
 
+<script>
+function toggleMenu() {
+	$('.select-store-nav').toggleClass('open');
+	$('.toggle-button').toggleClass('slide');
+}
+</script>
+
+<div class="row">	
+	<div class="md-12">
+	<div class="map-container">
+		<nav class="select-store-nav">
+			<div class="d-flex flex-column">
+				<h3 class="list-group-item h3 mb-0">Select Store</h3>
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+
+				<div class="list-group-item border-0 d-flex justify-content-center">
+					<%= image_tag('regions/Rectangle 12.png', class: "clip-circle") %>
+					<div class="p-2">
+						<a href="#" class="text-dark">RAMA2 Branch</a>
+						<p class="text-muted">Zip Code: 112</p>
+					</div>		
+				</div>
+				
+			</div>
+		</nav>
+	</div>
+	</div>
+</div>
+
+<div style="height:500px;">
+	<button class="toggle-button border-0 slide-menu-btn" style="height:50px; width: 30px;" onClick="toggleMenu()">
+		<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+ 		<path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+		</svg>
+	</button>	
+</div>
+
 <div class="row">
-    <div class="col-12 my-4">
-        <h4>Devices in Chaengwattana Branch, BLK 110</h4>
-    </div>
+	<div class="col-12 my-4">
+		<h4>Devices in Chaengwattana Branch, BLK 110</h4>
+	</div>
 </div>
 
 <nav class="levels-nav navbar  navbar-expand-sm bg-light justify-content-around border-bottom">
@@ -50,18 +109,18 @@
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
 			<div class="card-body position-relative">
-			<div class="icon-three-dots"></div>
+				<div class="icon-three-dots"></div>
 				<div class="row">
 					<div class="col">
 						<%= image_tag('regions/Image 1.png', alt: "Edit Entry") %>
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div>
 								<div class="text-muted">System Name</div>
 								<p class="font-weight-bold">AHU 1</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Supply Temperature</div>
 								<p class="font-weight-bold">17 C</p>
 							</div>
@@ -69,7 +128,7 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Status</div>
 							<p class="font-weight-bold text-success">On</p>
 						</div>
@@ -81,19 +140,19 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Setpoint Temperature</div>
 							<p class="font-weight-bold">18 C</p>
 						</div>
 						<div class=" border-top pt-2">
 							<div class="text-muted">Ambient Temperature</div>
 							<p class="font-weight-bold">23 C</p>
-					</div>
 						</div>
-						</div>
+					</div>	
+					</div>	
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Mode</div>
 							<p class="font-weight-bold">Cool</p>
 						</div>
@@ -105,11 +164,11 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
-							<div class="text-muted">Fan Speed</div>
-							<p class="font-weight-bold">2</p>
+							<div>
+								<div class="text-muted">Fan Speed</div>
+								<p class="font-weight-bold">2</p>
+							</div>
 						</div>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -128,23 +187,22 @@
 	</div>
 </div>
 
-
 <div class="row">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
 			<div class="card-body position-relative">
-			<div class="icon-three-dots"></div>
+				<div class="icon-three-dots"></div>
 				<div class="row">
 					<div class="col">
 						<%= image_tag('regions/Image 1.png', alt: "Edit Entry") %>
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div>
 								<div class="text-muted">System Name</div>
 								<p class="font-weight-bold">AHU 2</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Supply Temperature</div>
 								<p class="font-weight-bold">19 C</p>
 							</div>
@@ -152,7 +210,7 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Status</div>
 							<p class="font-weight-bold text-success">On</p>
 						</div>
@@ -164,19 +222,19 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
-							<div class="text-muted">Setpoint Temperature</div>
-							<p class="font-weight-bold">27 C</p>
-						</div>
-						<div class=" border-top pt-2">
-							<div class="text-muted">Ambient Temperature</div>
-							<p class="font-weight-bold">23 C</p>
-					</div>
-						</div>
-						</div>
+							<div>
+								<div class="text-muted">Setpoint Temperature</div>
+								<p class="font-weight-bold">27 C</p>
+							</div>
+							<div class=" border-top pt-2">
+								<div class="text-muted">Ambient Temperature</div>
+								<p class="font-weight-bold">23 C</p>
+							</div>
+      			    	</div>    
+					</div>	  
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Mode</div>
 							<p class="font-weight-bold">Cool</p>
 						</div>
@@ -188,11 +246,14 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+							<div>
+								<div class="text-muted">Fan Speed</div>
+								<p class="font-weight-bold">2</p>
+							</div>
+						<div>
 							<div class="text-muted">Fan Speed</div>
 							<p class="font-weight-bold">4</p>
 						</div>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -210,24 +271,24 @@
 		</div>
 	</div>
 </div>
-
+</div>
 
 <div class="row">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
 			<div class="card-body position-relative">
-			<div class="icon-three-dots"></div>
+				<div class="icon-three-dots"></div>
 				<div class="row">
 					<div class="col">
 						<%= image_tag('regions/Image 1.png', alt: "Edit Entry") %>
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div>
 								<div class="text-muted">System Name</div>
 								<p class="font-weight-bold">AHU 3</p>
 							</div>
-							<div class=" border-top pt-2">
+							<div class="border-top pt-2">
 								<div class="text-muted">Supply Temperature</div>
 								<p class="font-weight-bold">17 C</p>
 							</div>
@@ -235,7 +296,7 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Status</div>
 							<p class="font-weight-bold text-danger">Off</p>
 						</div>
@@ -247,19 +308,19 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
-							<div class="text-muted">Setpoint Temperature</div>
-							<p class="font-weight-bold">27 C</p>
-						</div>
+							<div>
+								<div class="text-muted">Setpoint Temperature</div>
+								<p class="font-weight-bold">27 C</p>
+							</div>
 						<div class=" border-top pt-2">
 							<div class="text-muted">Ambient Temperature</div>
 							<p class="font-weight-bold">23 C</p>
+            </div>  
+            </div>  
 					</div>
-						</div>
-						</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Mode</div>
 							<p class="font-weight-bold">Cool</p>
 						</div>
@@ -271,11 +332,10 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Fan Speed</div>
 							<p class="font-weight-bold">4</p>
 						</div>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -293,6 +353,7 @@
 		</div>
 	</div>
 </div>
+</div>
 
 <div class="row">
 	<div class="col-md-12 mt-4">
@@ -305,7 +366,7 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-							<div class="">
+							<div>
 								<div class="text-muted">System Name</div>
 								<p class="font-weight-bold">AHU 4</p>
 							</div>
@@ -317,7 +378,7 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Status</div>
 							<p class="font-weight-bold text-danger">Off</p>
 						</div>
@@ -329,7 +390,7 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Setpoint Temperature</div>
 							<p class="font-weight-bold">17 C</p>
 						</div>
@@ -341,7 +402,7 @@
 						</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Mode</div>
 							<p class="font-weight-bold">Cool</p>
 						</div>
@@ -353,7 +414,7 @@
 					</div>
 					<div class="col">
 						<div class="d-flex flex-column h-100 justify-content-center">
-						<div class="">
+						<div>
 							<div class="text-muted">Fan Speed</div>
 							<p class="font-weight-bold">4</p>
 						</div>
@@ -377,9 +438,9 @@
 </div>
 
 <div class="row">
-    <div class="col-12 my-4">
-        <h4>Overview of Electricty Consumption</h4>
-    </div>
+	<div class="col-12 my-4">
+		<h4>Overview of Electricty Consumption</h4>
+	</div>
 
 	<div class="col mb-4">
 		<div class="card box-shadowed overview-card">
