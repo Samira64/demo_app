@@ -16,37 +16,19 @@
 <nav class="levels-nav navbar  navbar-expand-sm bg-light justify-content-around border-bottom">
 	<ul class="navbar-nav d-flex justify-content-around w-100">
 		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">All Levels</a>
+			<a class="nav-link px-3 text-purple btn-all-zones" href="#">All Zones</a>
 		</li>
 		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 1</a>
+			<a class="nav-link px-3 text-purple btn-zone-a" href="#">Zone A</a>
 		</li>
 		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 2</a>
-		</li>
-		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 2</a>
-		</li>
-		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 4</a>
-		</li>
-		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 5</a>
-		</li>
-		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 6</a>
-		</li>
-		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 7</a>
-		</li>
-		<li class="nav-item mx-2">
-			<a class="nav-link px-3 text-purple" href="#">Level 8</a>
+			<a class="nav-link px-3 text-purple btn-zone-b" href="#">Zone B</a>
 		</li>
 	</ul>
 </nav>
 <br>
 
-<div class="row">
+<div class="row zone-a">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
 			<div class="card-body position-relative">
@@ -128,7 +110,7 @@
 	</div>
 </div>
 
-<div class="row">
+<div class="row zone-a">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
 			<div class="card-body position-relative">
@@ -214,7 +196,7 @@
 </div>
 </div>
 
-<div class="row">
+<div class="row zone-b">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
 			<div class="card-body position-relative">
@@ -296,7 +278,7 @@
 </div>
 </div>
 
-<div class="row">
+<div class="row zone-b">
 	<div class="col-md-12 mt-4">
 		<div class="card box-shadowed">
 			<div class="card-body position-relative">
@@ -459,3 +441,22 @@
 		</div>
 	</div>
 </div>
+
+<script>
+$(document).ready(()=> {
+  $('.btn-zone-a').click((e) => {
+	  e.preventDefault();
+	  $('.zone-a').show();
+	  $('.zone-b').hide();
+  });
+  $('.btn-zone-b').click((e) => {
+	  e.preventDefault();
+	  $('.zone-b').show();
+	  $('.zone-a').hide();
+  });
+    $('.btn-all-zones').click((e) => {
+	  e.preventDefault();
+	  $('.zone-a, .zone-b').show();
+  });
+  });
+</script>
