@@ -100,10 +100,10 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-around mt-4">
-                  <div><div class="circle-progress position-relative"><span></span></div></div>
-                  <div><div class="circle-progress position-relative"><span></span></div></div>
-                  <div><div class="circle-progress position-relative"><span></span></div></div>
-                  <div><div class="circle-progress position-relative"><span></span></div></div>
+                  <h1><span class="badge badge-warning py-5">4040 kWh</span></h1>
+                  <h1><span class="badge badge-success py-5">4569 kWh</span></h1>
+                  <h1><span class="badge badge-info py-5">5034 kWh</span></h1>
+                  <h1><span class="badge badge-danger py-5">4204 kWh</span></h1>
                 </div>
                 <p class="mt-5 text-muted"> See if devices like your AC or pump are running, or running too much</p>
                 </div>
@@ -296,23 +296,3 @@
     </div>
 
 </div>
-
-<script>
-   let data = [
-     {value: .54, color: '#ffc107'},
-     {value: .87, color: '#28a745'},
-     {value: .47, color: '#17a2b8'},
-     {value: .73, color: '#dc3545'},
-   ];
-    $('.circle-progress').each((i,el) => {
-      $(el).parent().find('span').text(data[i].value + '%');
-      $(el).circleProgress({
-        value: data[i].value,
-        thickness: 8,
-        lineCap: 'round',
-        fill: {
-            color: data[i].color
-        }
-    });
-  });
-</script>

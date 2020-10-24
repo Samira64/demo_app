@@ -222,7 +222,6 @@ main {
 }
 
 .btn-outline-purple:hover {
-  font-weight: bold;
   background: #696df2;
   color: white;
 }
@@ -233,9 +232,10 @@ main {
 }
 
 .btn-bg-purple:hover {
-  font-weight: bold;
   background-color: white; 
-  color: rgb(174,176,247);
+  color:  rgb(105,109, 242);
+  border: 1px solid rgb(105,109, 242);
+  font-weight: bold;
 }
 
 .alarms-table tr td:nth-child(6) {
