@@ -20,25 +20,31 @@
 			<div class="card-body position-relative">
 
 				<div class="row">
-					<div class="col-4">
+					<div class="col-3">
 						<%= image_tag('regions/Image 1.png', alt: "Edit Entry") %>
 					</div>
 
-					<div class="col-8">
+					<div class="col-9">
 						<div class="row">
 							<div class="col-12">
 								<p class="text-muted">System Name</p>
 								<div class="d-flex">
 									<p class="font-weight-bold">AHU1</p>
-									<p class="text-muted ml-auto">Chaengwattan Branch BLK 10<span class="ml-4">Zone A</span><span class="ml-4">ODU#1</span></p>
+									<p class="text-muted ml-auto">Chaengwattan Branch<span class="ml-4">Zone A</span><span class="ml-4">ODU#1</span></p>
 								</div>
 							</div>
 
 							<div class="col">
 								<div class="d-flex flex-column h-100 justify-content-center">
-									<div>
+									<div class="h-100">
 										<div class="text-muted">Status</div>
-										<p class="font-weight-bold text-success">ON</p>
+										<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
 									</div>
 									<div class="border-top pt-2">
 										<div class="text-muted">Supply Temperature</div>
@@ -49,11 +55,9 @@
 
 							<div class="col">
 								<div class="d-flex flex-column h-100 justify-content-center">
-									<div>
-										<div class="text-muted">Setpoint Temperature</div>
-										<p class="font-weight-bold">
-											<div><div class="circle-progress position-relative"><span></span></div></div>
-										</p>
+									<div class="pb-2 h-100">
+										<div class="text-muted pb-1">Setpoint Temperature</div>
+										<input type="number" class="col-md-9 font-weight-bold form-control form-control-sm d-inline" value=27> <strong>C</strong>
 									</div>
 									<div class="border-top pt-2">
 										<div class="text-muted">Return Temperature</div>
@@ -64,7 +68,7 @@
 
 							<div class="col">
 								<div class="d-flex flex-column h-100 justify-content-center">
-									<div>
+									<div class="h-100">
 										<div class="text-muted">Mode</div>
 										<span class="text-muted d-1 fan-mode">Cool</span>
 										<svg height="4" width="20">
@@ -85,7 +89,7 @@
 
 							<div class="col">
 								<div class="d-flex flex-column h-100 justify-content-center">
-									<div>
+									<div class="h-100">
 										<div class="text-muted">Fan Speed</div>
 										<span class="text-muted">1</span>
 										<svg height="4" width="20">
@@ -106,6 +110,18 @@
 										<p class="font-weight-bold">28%</p>
 									</div>
 								</div>
+							</div>
+							<div class="col">
+							<div class="d-flex flex-column h-100 justify-content-center">
+									<div class="h-100">
+										<div class="text-muted">Occupancy Count</div>
+										<p class="font-weight-bold">35</p>
+									</div>
+									<div class="border-top pt-2">
+										<div class="text-muted">Power Consumption</div>
+										<p class="font-weight-bold">5.6 kWh</p>
+									</div>
+								</div>		
 							</div>
 						</div>
 					</div>
