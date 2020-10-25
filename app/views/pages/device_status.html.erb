@@ -447,16 +447,22 @@
 <script>
 	$(document).ready(()=> {
 		$('.btn-zone-a').click((e) => {
+			$('.levels-nav .nav-link').removeClass('active');
+			$(e.target).addClass('active');
 			e.preventDefault();
 			$('.zone-a').show();
 			$('.zone-b').hide();
 		});
 		$('.btn-zone-b').click((e) => {
+			$('.levels-nav .nav-link').removeClass('active');
+			$(e.target).addClass('active');
 			e.preventDefault();
 			$('.zone-b').show();
 			$('.zone-a').hide();
 		});
 		$('.btn-all-zones').click((e) => {
+			$('.levels-nav .nav-link').removeClass('active');
+			$(e.target).addClass('active');
 			e.preventDefault();
 			$('.zone-a, .zone-b').show();
 		});
