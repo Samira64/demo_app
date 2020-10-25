@@ -354,6 +354,7 @@ a.branch-name:hover {
 }
 
 .store-list-item {
+  cursor: pointer;
   width: 90%;
 }
 
@@ -374,7 +375,6 @@ a.branch-name:hover {
   height: 600px;
   overflow-y: scroll;
   scrollbar-color: #aeb0f7 #696df2;
-  
 }
 
 @media screen and (max-height: 450px) {
