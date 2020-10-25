@@ -353,6 +353,30 @@ a.branch-name:hover {
   width: 100%;
 }
 
+.store-list-item {
+  width: 90%;
+}
+
+.store-list-item a {
+  color: black;
+}
+
+.store-list-item:hover {
+  background-color: #aeb0f7;
+}
+
+.list-group-item:hover a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.scroller {
+  height: 600px;
+  overflow-y: scroll;
+  scrollbar-color: #aeb0f7 #696df2;
+  
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
