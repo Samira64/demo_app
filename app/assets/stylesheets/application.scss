@@ -261,7 +261,7 @@ main {
 }
 
 .text-purple {
-  color: rgb(174,176,247);
+  color: #8083ef;
 }
 
 .levels-nav .nav-item:hover {
@@ -375,6 +375,12 @@ a.branch-name:hover {
   height: 600px;
   overflow-y: scroll;
   scrollbar-color: #aeb0f7 #696df2;
+}
+
+.levels-nav .nav-link.active {
+  background-color: rgb(226, 225, 253);
+  color: rgb(105,109, 242);
+  border-radius: 1rem;
 }
 
 @media screen and (max-height: 450px) {
