@@ -143,10 +143,6 @@ main {
   border-radius: 5px;
 }
 
-.progress {
-  height: 0.5rem;
-}
-
 .circle-progress span {
   position: absolute;
   top: 50%;
@@ -154,19 +150,9 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.metric-items h5 {
+.metric-name h5 {
   font-size: 1rem;
   font-weight: bold;
-}
-
-.metric-linear-progress {
-  position: relative;
-}
-
-.metric-value {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .region-box {
@@ -346,6 +332,10 @@ a.branch-name:hover {
 }
 
 .fan-mode {
+  cursor: pointer;
+}
+
+.fan-speed {
   cursor: pointer;
 }
 
