@@ -12,20 +12,21 @@
 
 </div>
 
-
+<% content_for :scripts do %>
 <script>
     function toggleMenu() {
         $('.select-store-nav').toggleClass('open');
     }
 
     function initMap() {
-        const uluru = {
-            lat: -25.344,
-            lng: 131.036
+        const center = {
+            lat: 13.766672,
+            lng: 100.540522
         };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-        });;
+            zoom: 14,
+            center,
+        });
     }
 </script>
+<% end %>
