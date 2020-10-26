@@ -364,8 +364,14 @@ a.branch-name:hover {
 
 .store-list-item:hover {
   background-color: #aeb0f7;
+  color: white;
+  font-weight: 700;
 }
-
+.select-store-nav.open .list-group-item:first-child {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
 .list-group-item:hover a {
   text-decoration: none;
   color: #fff;
@@ -376,6 +382,8 @@ a.branch-name:hover {
   overflow-y: scroll;
   scrollbar-color: #aeb0f7 #696df2;
 }
+
+
 
 .levels-nav .nav-link.active {
   background-color: rgb(226, 225, 253);

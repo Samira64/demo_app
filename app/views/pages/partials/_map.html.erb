@@ -14,6 +14,7 @@
 
 <% content_for :scripts do %>
 <script>
+    window.map = null;
     function toggleMenu() {
         $('.select-store-nav').toggleClass('open');
     }
@@ -23,9 +24,10 @@
             lat: 13.766672,
             lng: 100.540522
         };
-        const map = new google.maps.Map(document.getElementById("map"), {
+        map = new google.maps.Map(document.getElementById("map"), {
             zoom: 14,
             center,
+            disableDefaultUI: true
         });
     }
 </script>

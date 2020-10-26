@@ -1,5 +1,5 @@
 <nav class="select-store-nav border-0 position-absolute" style="top:0;">
-    <button class="toggle-button border-0 position-absolute slide-menu-btn" style="height:50px; width: 30px; right:-30px;top: 60px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;
+    <button class="toggle-button border-0 position-absolute slide-menu-btn" style="height:50px; width: 30px; right:-30px;top: 10px; background: white; border-top-right-radius: 5px; border-bottom-right-radius: 5px;
 " onClick="toggleMenu()">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
@@ -7,58 +7,88 @@
     </button>
 
     <div class="scroller bg-white d-flex flex-column align-items-center">
-        <div class="list-group-item w-100 border-left-0 border-right-0 h3 mb-0 text-center">
+        <div class="list-group-item w-100 border-0 h3 mb-0 text-center">
             <h3 class="mb-0">Select Store</h3>
         </div>
-        
-        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item mt-1">
-            <%= image_tag('branches/Rama2.png', class: "clip-circle") %> 
-            <div class="px-3">
-                <a href="#">Rama2</a>
+
+        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item mt-1" data-pos="13.653154,100.422830">
+            <%= image_tag('branches/Rama2.png', class: "clip-circle") %>
+            <div class="px-3 store-name">
+                Rama2
             </div>
         </div>
 
-        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item">
+        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item" data-pos="13.824193,100.655500">
             <%= image_tag('branches/Nawamin.png', class: "clip-circle") %>
-            <div class="px-3">
-                <a href="#">Nawamin</a>
-            </div>    
+            <div class="px-3 store-name">
+                Nawamin
+            </div>
         </div>
 
-        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item">
+        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item" data-pos="13.935241,100.454228">
             <%= image_tag('branches/Chaiyapruke.png', class: "clip-circle") %>
-            <div class="px-3">
-                <a href="#">Chaiyapruek</a>
-            </div>        
+            <div class="px-3 store-name">
+                Chaiyapruke
+            </div>
         </div>
 
-        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item"> 
+        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item" data-pos="13.899239,100.541373">
             <%= image_tag('branches/Chaengwattana.png', class: "clip-circle") %>
-            <div class="px-3">
-                <a href="#">Chaengwattana</a>
-            </div>   
+            <div class="px-3 store-name">
+                Chaengwattana
+            </div>
         </div>
 
-        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item">
+        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item" data-pos="13.982728,100.514941">
             <%= image_tag('branches/Pathum Thani.png', class: "clip-circle") %>
-            <div class="px-3">
-                <a href="#">Pathum Thani</a>
-            </div>   
+            <div class="px-3 store-name">
+                Pathum Thani
+            </div>
         </div>
 
-        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item">
+        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item" data-pos="13.705945,100.300998">
             <%= image_tag('branches/Samursakhon.png', class: "clip-circle") %>
-            <div class="px-3">
-                <a href="#">Samursakhon</a>
-            </div> 
+            <div class="px-3 store-name">
+                Samut Sakhon
+            </div>
         </div>
 
-        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item">   
+        <div class="list-group-item rounded border-0 d-flex align-items-center store-list-item" data-pos="13.651902,100.676668">
             <%= image_tag('branches/Bangna.png', class: "clip-circle") %>
-            <div class="px-3">
-                <a href="#">Bangna</a>
+            <div class="px-3 store-name">
+                Bangna
             </div>
         </div>
 
     </div>
 </nav>
+
+<%= content_for :scripts do %>
+<script>
+    $(document).ready(function() {
+        $('.store-list-item').on('click', function(e) {
+            let pos = $(e.target).closest('.store-list-item').data('pos');
+            let name = $(e.target).closest('.store-name').text();
+            pos = pos.split(',');
+            pos = {
+                lat: parseFloat(pos[0]),
+                lng: parseFloat(pos[1])
+            };
+
+            let infoWindow = new google.maps.InfoWindow({
+                content: '<%= image_tag "floorplan_heatmap.gif" %>'
+            })
+            let marker = new google.maps.Marker({
+                position: pos,
+                map,
+                title: name.trim(),
+            });
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
+            map.panTo(pos);
+            console.log('title is', name);
+        })
+    });
+</script>
+<% end %>
