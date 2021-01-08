@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module DemoApp
   class Application < Rails::Application
+  	config.action_mailer.delivery_method = :mailjet
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 

@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/devices/:id/status', to: 'pages#device_status'
   get 'devices/:id/analytics', to: 'pages#device_analytics'
   get 'devices/:id/monitor', to: 'pages#device_monitor'
+  get 'sendmail', to: 'pages#sendmail'
 end
